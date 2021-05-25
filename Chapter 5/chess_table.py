@@ -11,13 +11,18 @@
 #This function should detect when a bug has resulted in an improper chess board.
 
 chess_board = {'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking'}
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 
 def isValidChessBoard(dictionary):
+
+    white_pieces = [item for item in dictionary.values() if item[0] == 'w']
+    black_pieces = [item for item in dictionary.values() if item[0] == 'b']
+
+    if len(white_pieces) + len(black_pieces) > 32:
+        print("Too many pieces on the board.")
+
     for place, figure in dictionary.items():
-        if len(place) > 2 or not int(place[0]) in numbers or not str(place[1]) in letters:
-            print(f'"Invalid placement of {figure}"')
+        if len(place) > 2 or int(place[0]) > 8 or str(place[1]) > 'h':
+            print(f"Invalid placement of {figure}")
 
 
 isValidChessBoard(chess_board)
