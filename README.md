@@ -17,5 +17,7 @@ Further materials:
 https://automatetheboringstuff.com/
 
 ### TODO
-[] Upload further Chapters that are done
-[] Finish all the Chapters
+
+- [ ] Upload further Chapters that are done
+
+- [ ] Finish all the Chapters
