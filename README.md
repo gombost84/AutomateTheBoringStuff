@@ -16,6 +16,8 @@ Further materials:
 
 https://automatetheboringstuff.com/
 
+![Certificate](automate.jpg)
+
 ### TODO
 
 - [ ] Upload further Chapters that are done
